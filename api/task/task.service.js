@@ -53,7 +53,7 @@ module.exports = {
     getTaskById_Todo: (id) => {
         return new Promise((resolve, reject) => {
             pool.query(
-                `select id, taskTitle, taskDesc, assignedTo, sorting, status from task where assignedTo = ? and status is null or status = 0 order by sorting`,
+                `select id, taskTitle, taskDesc, assignedTo, sorting, status from task where assignedTo = ? and (status is null or status = 0) order by sorting`,
                 [id],
                 (error, results, fields) => {
                     if (error) {
