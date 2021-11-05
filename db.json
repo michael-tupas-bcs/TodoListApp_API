@@ -1,0 +1,37 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "tasks": [
+    {
+      "taskid": 1,
+      "tasktitle":"task 1",
+      "body": "task 1 description",
+      "ownerid": 1,
+      "deleted": 0,
+      "datecreated": "2021-11-02"
+    },
+    {
+      "taskid": 2,
+      "tasktitle":"task 2",
+      "body": "task 2 description",
+      "ownerid": 2,
+      "deleted": 0,
+      "datecreated": "2021-11-01"
+    }
+  ]
+}
